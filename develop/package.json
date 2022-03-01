@@ -1,0 +1,23 @@
+{
+  "name": "chall10",
+  "version": "1.0.0",
+  "description": "A team generator application",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnificentRoast/team-page-builder.git"
+  },
+  "author": "MagnificentRoast",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnificentRoast/team-page-builder/issues"
+  },
+  "homepage": "https://github.com/MagnificentRoast/team-page-builder#readme",
+  "devDependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1"
+  }
+}
