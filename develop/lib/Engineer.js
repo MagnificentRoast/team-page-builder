@@ -1,22 +1,21 @@
-// defines and exports engineer
-class Engineer {
-    constructor(name, id, email) {
-        this.name = name;
-        this.id = id;
-        this.email = email;
-    }
-    getName() {
-        return this.name;
-    };
-    getId() {
-        return this.id;
-    };
-    getEmail() {
-        return this.email;
-    };
-    getRole() {
-        return "Engineer";
-    };
-}
+// imports Employee.js module
+const Employee = require('../lib/Employee');
 
+// Engineer class
+class Engineer extends Employee {
+    constructor(name, id, email, github) {
+        super(name, id, email);
+        this.github = github;
+    }
+    // getRole() function
+    getRole() {
+        return "Engineer"
+    }
+    // getGitHub() function
+    getGithub() {
+        return this.github;
+    }
+};
+
+// exports Engineer
 module.exports = Engineer;
