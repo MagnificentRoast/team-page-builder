@@ -8,19 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MagnificentRoast/team-page-builder.git"
+    "url": "git+https://github.com/stevetrilogy/unit10hw.git"
   },
-  "author": "MagnificentRoast",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MagnificentRoast/team-page-builder/issues"
+    "url": "https://github.com/stevetrilogy/unit10hw/issues"
   },
-  "homepage": "https://github.com/MagnificentRoast/team-page-builder#readme",
-  "devDependencies": {
-    "inquirer": "^8.2.0",
-    "jest": "^27.5.1"
-  },
+  "homepage": "https://github.com/stevetrilogy/unit10hw#readme",
   "dependencies": {
-    "path": "^0.12.7"
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
