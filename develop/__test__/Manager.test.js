@@ -5,7 +5,7 @@ const Employee = require('../lib/Employee');
 test("Should be able to set office number via constructor", () => {
     const testVal = 100;
     const e = new Manager("Timothy", 1, "test@test.com", testVal);
-    expect(e.officeNumber()).toBe(testVal);
+    expect(e.getOfficeNumber()).toBe(testVal);
 });
 // getRole override
 test("To see if getRole() is overridden with \"Manager\"", () => {
@@ -17,5 +17,5 @@ test("To see if getRole() is overridden with \"Manager\"", () => {
 test("to get office number from the getOffice function", () => {
     const testVal = 100;
     const e = new Manager("Timothy", 1, "test@test.com", 100, testVal);
-    expect(e.getOfficeNumber()).toEqual(testVal);
+    expect(e.getOfficeNumber()).toBe(testVal);
 });

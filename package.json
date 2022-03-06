@@ -1,0 +1,24 @@
+{
+  "name": "team-page-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnificentRoast/team-page-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnificentRoast/team-page-builder/issues"
+  },
+  "homepage": "https://github.com/MagnificentRoast/team-page-builder#readme",
+  "devDependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1",
+    "path": "^0.12.7"
+  }
+}
