@@ -1,16 +1,20 @@
 <div class="card" style="width: 18rem;">
+    <div class="card-header">
+        <h1 class="card-title">{{ name }}</h1>
+        <h2 class="card-title"><i class="fas fas-glasses mr-2">{{ role }}</i></h2>
+    </div>
+
     <div class="card-body">
         <h5 class="card-title"></h5>
         <p class="card-text"></p>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item"></li>
-        <li class="list-group-item"></li>
-        <li class="list-group-item"></li>
-        <li class="list-group-item"></li>
+        <li class="list-group-item">ID: {{ id }}</li>
+        <li class="list-group-item">Email: <a href="mailto:{{ email }}"{{ email }}></a></li>
+        <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="nonopener noreffer">{{ github }}</a></li>
     </ul>
     <div class="card-body">
-        <a href="#" class="card-link"></a>
-        <a href="#" class="card-link"></a>
+        <a href="mailto:{{ email }}"{{ email }} class="card-link"></a>
+        <a href="https://github.com/{{ github }}"{{ github }} class="card-link"></a>
     </div>
 </div>

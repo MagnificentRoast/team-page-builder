@@ -7,10 +7,10 @@ const path = require("path");
 const fs = require("fs");
 
 // TODO add an output directory, code snippet found via TabNine
-const output_dir = path.join(__dirname, "output")
+const OUTPUT_DIR = path.join(__dirname, "Output")
 
 // TODO output path to "team.html", code snippet found via TabNine
-const team = path.join(output_dir, "team.html")
+const team = path.join(OUTPUT_DIR, "team.html")
 
 // imports htmlRender.js, renamed to render for simplicity
 const create = require("./lib/htmlRender")
@@ -76,9 +76,22 @@ inquirer.prompt([{
         "None"
     ]
 }
-])
-// add engineer, add intern, add manager, default is renderTeam() function (Use switch cases for this)
-
+]).then(userChoice => {
+    switch (userChoice.memberChoice) {
+        case "Engineer":
+            addEngineer();
+            break;
+        case "Intern":
+            addIntern();
+            break;
+        case "Manager":
+            addManager();
+            break;
+        default:
+            buildTeam();
+    }
+})
+// above adds engineer, add intern, add manager, default is renderTeam() function (Use switch cases for this)
 }
 
 
@@ -164,8 +177,12 @@ inquirer.prompt([
 // renderTeam() function
 function renderTeam() {
 // if it exists, sync
+if (!fs.existsSync(OUTPUT_DIR)) {
 // make a directory
+    fs.mkdirSync(OUTPUT_DIR)
 // sync and/or write file to the output path, and it renders team members, encryption has to be utf-8
+}
+fs.writeFileSync(team, create(teamArray), "utf-8")
 }
 // reference team creation function
 renderTeam();
